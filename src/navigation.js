@@ -35,9 +35,14 @@ export default function Navigation (){
     return(
         <Tab.Navigator
             screenOptions= {( { route, navigation } ) => ({
-                tabBarIcon: ({ color, size }) => {
-                    if (route.name === 'Pay'){
-                        return <PayButton onPress={()=> navigation.natigate('Pay')} /> ;
+                tabBarIcon: ({ color, size, focused }) => {
+                    if (route.name === "Pay"){
+                        return ( 
+                            <PayButton
+                                onPress={() => navigation.navigate("Pay")}
+                                focused={focused} 
+                                />
+                        );
                             
                        
                     }
