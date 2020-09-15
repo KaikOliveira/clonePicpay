@@ -17,7 +17,7 @@ export default function Home(){
               <MaterialCommunityIcons name="qrcode-scan" size={30} color="#10c86e" />
 
               <BalanceContainer>
-                  <BalanceTitle>Meu saldo</BalanceTitle>
+                  <BalanceTitle>Meu Saldo</BalanceTitle>
                   <Balance>R$ 16.658,00</Balance>
               </BalanceContainer>
 
