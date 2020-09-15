@@ -1,9 +1,29 @@
 import React from 'react';
-import { Text } from 'react-native';
 
+import { 
+    Wrapper,
+    Header,
+    HeaderContainer, 
+    Title,
+    BalanceContainer,
+    Value,
+    Bold, 
+} from './styles';
 
 export default function Wallet(){
     return(
-        <Text>Wallet</Text>
+        <Wrapper>
+            <Header colors={['#52e78c', '#1ab563']}>
+                <HeaderContainer>
+                    <Title>Saldo PicPay</Title>
+
+                    <BalanceContainer>
+                        <Value>
+                            R$ <Bold>0,00</Bold>
+                        </Value>
+                    </BalanceContainer>
+                </HeaderContainer>
+            </Header>
+        </Wrapper>
     );
 }
