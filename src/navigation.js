@@ -33,8 +33,9 @@ const icons ={
 export default function Navigation (){
 
     return(
+        <>
         <Tab.Navigator
-            initialRouteName="Wallet"
+            initialRouteName="Home"
             screenOptions= {( { route, navigation } ) => ({
                 tabBarIcon: ({ color, size, focused }) => {
                     if (route.name === "Pay"){
@@ -96,5 +97,6 @@ export default function Navigation (){
             }}
             />
         </Tab.Navigator>
+        </>
     );
 }
